@@ -250,6 +250,44 @@ textarea { min-height: 120px; resize: vertical; }
 .footer-links a { text-decoration: none; font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--forest); }
 .small { font-size: 0.82rem; color: var(--sage); }
 
+/* Compact, understated footer social links with comfortable click targets */
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem auto 1.25rem;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 6px 10px;
+  color: var(--forest);
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  opacity: 0.78;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+.social-links a:hover { color: var(--gold-deep); opacity: 1; }
+.social-links a:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 2px; }
+.social-links svg {
+  display: block;
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.social-links svg .icon-fill { fill: currentColor; stroke: none; }
+
 /* Fade-in on scroll */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.8s ease, transform 0.8s ease; }
 .reveal.in { opacity: 1; transform: none; }

@@ -263,3 +263,24 @@ textarea { min-height: 120px; resize: vertical; }
 .mobile-ctas { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: var(--ivory); border-top: 1px solid var(--line); padding: 10px var(--gutter); gap: 10px; }
 .mobile-ctas .btn { flex: 1; text-align: center; padding: 0.9em 0.5em; font-size: 0.7rem; }
 @media (max-width: 900px) { body { padding-bottom: 72px; } }
+
+/* Collections, corporate gifting, policies */
+.collections { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 24px; }
+.collection img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid var(--line); margin-bottom: 14px; }
+.collection h3 { font-size: 1.4rem; margin-bottom: 0.2em; }
+.collection p { margin: 0; font-size: 0.95rem; }
+.biz, .info-grid { display: grid; gap: 24px; }
+.biz { grid-template-columns: repeat(3, 1fr); margin-bottom: 1rem; }
+.info-grid { grid-template-columns: repeat(2, 1fr); }
+.biz > div, .info-grid > div { border-top: 1px solid var(--gold); padding-top: 18px; }
+.biz p, .info-grid p { margin: 0; font-size: 0.95rem; }
+@media (max-width: 900px) { .collections { grid-template-columns: 1fr 1fr; } .biz { grid-template-columns: 1fr; } .info-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .collections, .info-grid { grid-template-columns: 1fr; } }
+
+/* FAQ */
+.faq details { border-bottom: 1px solid var(--line); padding: 4px 0; }
+.faq summary { cursor: pointer; list-style: none; font-family: var(--serif); font-size: 1.35rem; color: var(--forest); padding: 16px 32px 16px 0; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); color: var(--gold-deep); font-size: 1.5rem; }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { margin: 0 0 18px; }

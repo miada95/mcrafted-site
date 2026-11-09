@@ -20,14 +20,16 @@
     .product-card img { width:100%; aspect-ratio:4/5; object-fit:cover; background:var(--cream); }
     .product-card h3 { margin:.9rem 0 .25rem; font-size:1.35rem; }
     .product-card p { margin:0; font-size:.94rem; }
+    .event-setup-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+    .event-setup-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; border:1px solid var(--line); background:var(--cream); }
     .social-links { display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:.3rem; max-width:100%; margin:1rem auto 1.5rem; }
     .social-links a { display:inline-flex; align-items:center; justify-content:center; gap:.45rem; min-width:44px; min-height:44px; width:auto; height:auto; padding:0 .6rem; white-space:nowrap; text-decoration:none; color:var(--forest); font-size:.72rem; letter-spacing:.06em; opacity:.85; }
     .social-links a:hover { color:var(--gold-deep); opacity:1; }
     .social-links svg { display:block; flex:0 0 17px; width:17px; height:17px; }
     .site-footer .footer-links { gap:clamp(12px,2vw,22px); }
     .site-footer .small { overflow-wrap:anywhere; }
-    @media(max-width:900px) { .site-header .header-inner { position:relative; } .site-header .main-nav { z-index:25; max-height:calc(100vh - 90px); overflow-y:auto; } .product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-    @media(max-width:560px) { .product-grid { gap:12px; } .product-card { padding:9px; } .product-card h3 { font-size:1.15rem; } .social-links { gap:.1rem; } .social-links a { padding-inline:.45rem; } }
+    @media(max-width:900px) { .site-header .header-inner { position:relative; } .site-header .main-nav { z-index:25; max-height:calc(100vh - 90px); overflow-y:auto; } .product-grid,.event-setup-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:560px) { .product-grid { gap:12px; } .product-card { padding:9px; } .product-card h3 { font-size:1.15rem; } .event-setup-grid { gap:10px; } .social-links { gap:.1rem; } .social-links a { padding-inline:.45rem; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } }
   </style>
 </head>
@@ -58,6 +60,14 @@
       <p class="eyebrow">Experience live engraving</p><h2>More than a favor. <span class="script">More than entertainment.</span></h2><p class="pull">An experience your guests become part of.</p>
       <p>Imagine your guests choosing their own piece, watching it engraved live, then leaving with a keepsake they'll actually use. Every engraving is completed on-site in just minutes while your celebration keeps going.</p><p><strong>Personal. Interactive. Memorable.</strong></p><div class="btn-row"><a class="btn btn-solid" href="#inquire">Book Your Event</a></div>
     </div></div></section>
+    <section class="alt" aria-labelledby="setup-heading"><div class="wrap"><div class="section-head center reveal"><p class="eyebrow">A closer look</p><h2 id="setup-heading">The live engraving <span class="script">setup</span></h2><p class="lede">A welcoming display, thoughtfully arranged for guests to browse and choose a keepsake.</p></div>
+      <div class="event-setup-grid reveal">
+        <img src="images/IMG_5134.JPG" alt="M Crafted live engraving event table setup" loading="lazy">
+        <img src="images/IMG_5135.JPG" alt="Personalized keepsakes displayed at the M Crafted event table" loading="lazy">
+        <img src="images/IMG_5136.JPG" alt="M Crafted product display prepared for live engraving" loading="lazy">
+        <img src="images/IMG_5137.JPG" alt="Details from a M Crafted live engraving setup" loading="lazy">
+      </div>
+    </div></section>
     <section id="shop" class="alt"><div class="wrap"><div class="section-head center reveal"><p class="eyebrow">Shop our collections</p><h2>Personalized, <span class="script">just for you</span></h2><p class="lede">Names, initials, dates, and custom text, engraved on pieces made to keep. Shipped nationwide or ready for local pickup.</p></div>
       <div class="product-grid">
         <article class="product-card reveal"><img src="images/3DB84F06-87E1-42FC-907F-0F02159FCFC5.PNG" alt="Personalized compact mirrors" loading="lazy"><h3>Compact Mirrors</h3><p>Personalized keepsakes for everyday</p></article>
